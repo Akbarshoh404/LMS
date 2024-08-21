@@ -1,0 +1,110 @@
+.navbar {
+  color: black;
+  width: 100%;
+  height: 125px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.container {
+  width: 85%;
+  margin: auto;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logoDiv {
+  display: flex;
+  gap: 30px;
+
+  font-family: Space Grotesk;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 28px;
+  text-align: left;
+}
+
+.menu {
+  display: flex;
+  gap: 50px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hamburger {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background-color: #333;
+    padding: 10px 0;
+  }
+
+  .menu.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
+
+/* Login and Register Button */
+
+.loginButton {
+  width: 120px;
+  height: 70px;
+  gap: 10px;
+  border-radius: 14px;
+  border: 1px solid black;
+  transition: background-color 0.3s;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loginButton:hover {
+  background-color: #c9f1ff;
+  cursor: pointer;
+}
+
+.registerButton {
+  width: 120px;
+  height: 70px;
+  gap: 10px;
+  border-radius: 14px;
+  border: 1px solid black;
+  transition: background-color 0.3s;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #c9f1ff;
+}
+
+.registerButton:hover {
+  background-color: white;
+  cursor: pointer;
+}
