@@ -38,7 +38,17 @@ const LandingFooter = () => {
               <img src={Twitter} alt="Twitter" />
             </div>
           </div>
-          <div className={styles.middle}></div>
+
+          <div className={styles.middle}>
+            <div className={styles.contact}></div>
+
+            <div className={styles.email}>
+              <input type="text" placeholder="Email"/>
+
+              <button>Subscribe to news</button>
+            </div>
+          </div>
+
           <div className={styles.bottom}>
             <p>© 2024 LMS. All Rights Reserved.</p>
             <p>Privacy Policy</p>
