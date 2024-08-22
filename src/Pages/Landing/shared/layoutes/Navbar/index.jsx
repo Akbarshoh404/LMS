@@ -1,10 +1,13 @@
 // src/Navbar.js
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
+
 import styles from "./style.module.css";
 
 import logo from "../../assets/images/logo.png";
 
 const Navbar = () => {
+  const navigate = useNavigate();
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -28,7 +31,14 @@ const Navbar = () => {
           <a href="#home">About us</a>
           <a href="#about">Schools</a>
           <a href="#services">Teachers</a>
-          <a className={styles.loginButton}>Login</a>
+          <a
+            className={styles.loginButton}
+            onClick={() => {
+              navigate("/login");
+            }}
+          >
+            Login
+          </a>
           <a className={styles.registerButton}>Sign Up</a>
         </div>
 
