@@ -40,10 +40,18 @@ const LandingFooter = () => {
           </div>
 
           <div className={styles.middle}>
-            <div className={styles.contact}></div>
+            <div className={styles.contact}>
+              <div>Contact us:</div>
+              <p>Email: info@lms.com</p>
+              <p>Phone: 555-567-8901</p>
+              <p>
+                Address: Tashkent City Yashnabad district Muhammad al Khwarazmi
+                school
+              </p>
+            </div>
 
             <div className={styles.email}>
-              <input type="text" placeholder="Email"/>
+              <input type="text" placeholder="Email" />
 
               <button>Subscribe to news</button>
             </div>
