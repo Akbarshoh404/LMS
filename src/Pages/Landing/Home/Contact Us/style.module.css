@@ -24,8 +24,7 @@
 }
 
 .titleName {
-  width: 235px;
-  height: 50px;
+  padding: 5px 15px;
   background: rgba(201, 241, 255, 1);
   border-radius: 7px;
   font-family: Space Grotesk;
@@ -115,8 +114,8 @@
   text-align: left;
 }
 
-.form2 div{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+.form2 div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
