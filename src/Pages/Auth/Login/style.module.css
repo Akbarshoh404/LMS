@@ -1,0 +1,87 @@
+.body {
+  font-family: "Arial", sans-serif;
+  background: rgba(201, 241, 255, 1);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  padding: 10px; /* Added padding for smaller screens */
+}
+
+.loginContainer {
+  background: white;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px; /* Max width for larger screens */
+  text-align: center;
+}
+
+.loginContainer h1 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.inputGroup {
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.inputGroup input {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  transition: border-color 0.3s;
+}
+
+.inputGroup input:focus {
+  border-color: rgba(25, 26, 35, 1);
+  outline: none;
+}
+
+.loginButton {
+  background: rgba(25, 26, 35, 1);
+
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 16px;
+  transition: background-color 0.3s;
+  margin-top: 10px; /* Added margin for spacing */
+}
+
+.footer {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #666;
+}
+
+.footer a {
+  color: rgba(25, 26, 35, 1);
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 600px) {
+  .loginContainer {
+    padding: 20px; /* Reduced padding for smaller screens */
+  }
+
+  .loginContainer h1 {
+    font-size: 24px; /* Adjusted font size */
+  }
+
+  .inputGroup input {
+    padding: 8px; /* Adjusted padding */
+  }
+
+  .loginButton {
+    font-size: 14px; /* Adjusted button font size */
+  }
+}

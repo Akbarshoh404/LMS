@@ -1,0 +1,121 @@
+.contact {
+  height: 100vh;
+  width: 100%;
+}
+
+.container {
+  margin: auto;
+  width: 85%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+}
+
+/* Title */
+
+.title {
+  width: 100%;
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.titleName {
+  padding: 5px 15px;
+  background: rgba(201, 241, 255, 1);
+  border-radius: 7px;
+  font-family: Space Grotesk;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 51.04px;
+  text-align: left;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.titleText {
+  width: 500px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Form */
+
+.form {
+  width: 100%;
+  height: 700px;
+  background: rgba(243, 243, 243, 1);
+  border-radius: 45px;
+  padding: 75px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+}
+
+.form2 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.form2 button {
+  width: 90%;
+  height: 70px;
+  padding: 20px 35px 20px 35px;
+  border-radius: 14px;
+  background: rgba(25, 26, 35, 1);
+  color: white;
+  border: none;
+  font-family: Space Grotesk;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: center;
+}
+
+.input1 {
+  width: 90%;
+  height: 60px;
+  padding: 18px 30px 18px 30px;
+  gap: 10px;
+  border-radius: 14px;
+  border: 1px solid black;
+
+  font-family: Space Grotesk;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22.97px;
+  text-align: left;
+}
+
+.input2 {
+  width: 90%;
+  height: 190px;
+  padding: 18px 30px 18px 30px;
+  gap: 10px;
+  border-radius: 14px;
+  border: 1px solid black;
+
+  font-family: Space Grotesk;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22.97px;
+  text-align: left;
+}
+
+.form2 div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}

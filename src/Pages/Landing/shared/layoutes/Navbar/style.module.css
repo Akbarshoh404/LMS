@@ -2,10 +2,6 @@
   color: black;
   width: 100%;
   height: 125px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 1000;
 }
 
 .container {
@@ -26,6 +22,7 @@
   font-weight: 500;
   line-height: 28px;
   text-align: left;
+  cursor: pointer;
 }
 
 .menu {
