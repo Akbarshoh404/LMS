@@ -1,36 +1,37 @@
-// src/Navbar.js
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-
 import styles from "./style.module.css";
-
 import logo from "../../assets/images/logo.png";
 
 const Navbar = () => {
+  const [isMenuActive, setIsMenuActive] = useState(false);
   const navigate = useNavigate();
-  const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
-    setIsOpen(!isOpen);
+    setIsMenuActive(!isMenuActive);
   };
 
   return (
-    <nav className={styles.navbar}>
-      <div className={styles.container}>
-        <div className={styles.logoDiv}>
-          <img src={logo} alt="Logo" />
-
+    <>
+      <nav className={styles.nav}>
+        <div className={styles.logo}>
+          <img src={logo} alt="logo" />
           <p>
             Learning
             <br />
             Management System
           </p>
         </div>
-
-        <div className={`${styles.menu} ${isOpen ? styles.active : ""}`}>
-          <a href="#home">About us</a>
-          <a href="#about">Schools</a>
-          <a href="#services">Teachers</a>
+        <ul className={styles.navList}>
+          <li>
+            <a href="#">About Us</a>
+          </li>
+          <li>
+            <a href="#">Schools</a>
+          </li>
+          <li>
+            <a href="#">Teachers</a>
+          </li>
           <a
             className={styles.loginButton}
             onClick={() => {
@@ -40,13 +41,35 @@ const Navbar = () => {
             Login
           </a>
           <a className={styles.registerButton}>Sign Up</a>
+        </ul>
+        <div
+          className={`${styles.hamburger} ${
+            isMenuActive ? styles.hamburgerActive : ""
+          }`}
+          onClick={toggleMenu}
+        >
+          <span className={styles.line}></span>
+          <span className={styles.line}></span>
+          <span className={styles.line}></span>
         </div>
-
-        <div className={styles.hamburger} onClick={toggleMenu}>
-          &#9776;
-        </div>
+      </nav>
+      <div className={`${styles.menubar} ${isMenuActive ? styles.active : ""}`}>
+        <ul>
+          <li>
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="#">Services</a>
+          </li>
+          <li>
+            <a href="#">Blog</a>
+          </li>
+          <li>
+            <a href="#">Contact Us</a>
+          </li>
+        </ul>
       </div>
-    </nav>
+    </>
   );
 };
 
