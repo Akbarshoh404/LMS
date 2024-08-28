@@ -1,40 +1,43 @@
 import React from "react";
 import { useState } from "react";
 
-import "./style.css";
+import { useNavigate } from "react-router-dom";
+
+import styles from "./style.module.css";
 
 const Login = () => {
+  const navigate = useNavigate();
+
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Handle login logic here
-    console.log("Username:", username);
-    console.log("Password:", password);
-  };
-
   return (
-    <div className="login-container">
-      <h2>Login</h2>
-      <form onSubmit={handleSubmit}>
-        <input
-          type="text"
-          placeholder="Username"
-          value={username}
-          onChange={(e) => setUsername(e.target.value)}
-          required
-        />
-        <input
-          type="password"
-          placeholder="Password"
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-          required
-        />
-        <button type="submit">Login</button>
-      </form>
-    </div>
+    <>
+      <div className={styles.body}>
+        <div className={styles.loginContainer}>
+          <h1>Login</h1>
+          <div className={styles.inputGroup}>
+            <input type="text" placeholder="Username" required />
+          </div>
+          <div className={styles.inputGroup}>
+            <input type="password" placeholder="Password" required />
+          </div>
+          <button
+            className={styles.loginButton}
+            onClick={() => {
+              navigate("/login");
+            }}
+          >
+            Login
+          </button>
+          <div className={styles.footer}>
+            <p>
+              Don't have an account? <a href="#">Sign up</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </>
   );
 };
 

@@ -1,11 +1,13 @@
-import React from 'react'
+import React from "react";
 
 import styles from "./style.module.css";
 
 const Services = () => {
   return (
-    <div>Services</div>
-  )
-}
+    <>
+      Services
+    </>
+  );
+};
 
-export default Services
+export default Services;

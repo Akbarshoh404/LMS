@@ -1,0 +1,109 @@
+.working {
+  width: 100%;
+  margin-bottom: 75px;
+}
+
+.container {
+  width: 85%;
+  margin: auto;
+}
+
+/* Header Section */
+
+.header {
+  width: 100%;
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.headerTitle {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 35px;
+  font-weight: 500;
+  line-height: 44px;
+  background: rgba(201, 241, 255, 1);
+  padding: 5px 15px;
+  border-radius: 15px;
+  margin-right: 20px;
+}
+
+.headerSubtitle {
+  font-family: Space Grotesk;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22.97px;
+  width: 300px;
+}
+
+/* Accordion Section */
+
+.accordionItem {
+  border: 1px solid rgba(25, 26, 35, 1);
+  border-bottom: 5px solid rgba(25, 26, 35, 1);
+  background-color: rgba(243, 243, 243, 1);
+  border-radius: 45px;
+  padding-top: 41px;
+  padding-left: 60px;
+  padding-bottom: 41px;
+  padding-right: 60px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+  margin-bottom: 20px; /* Gap between accordion items */
+}
+
+.accordionItemOpen {
+  background-color: rgba(201, 241, 255, 1);
+}
+
+.accordionHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.accordionNumber {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 60px;
+  font-weight: 500;
+  line-height: 76.56px;
+  text-align: left;
+  color: rgba(0, 0, 0, 1);
+  margin-right: 0.5rem;
+}
+
+.accordionTitle {
+  flex-grow: 1;
+  padding-left: 20px;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 38.28px;
+  text-align: left;
+}
+
+.accordionToggle {
+  font-size: 50px;
+  background: rgba(243, 243, 243, 1);
+  border: 1px solid rgba(25, 26, 35, 1);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.accordionContent {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22.97px;
+  text-align: left;
+
+  margin-top: 1rem;
+  padding-top: 2rem;
+  border-top: 1px solid black;
+}

@@ -1,0 +1,83 @@
+.caseStudies {
+  width: 100%;
+  margin-bottom: 75px;
+}
+
+.container {
+  width: 85%;
+  margin: auto;
+}
+
+/* Header Section */
+
+.header {
+  width: 100%;
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.headerTitle {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 35px;
+  font-weight: 500;
+  line-height: 44px;
+  background: rgba(201, 241, 255, 1);
+  padding: 5px 15px;
+  border-radius: 15px;
+  margin-right: 20px;
+}
+
+.headerSubtitle {
+  font-family: Space Grotesk;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22.97px;
+  width: 600px;
+}
+
+.successStories {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: #181820;
+  padding: 65px;
+  border-radius: 30px;
+  color: white;
+}
+
+.story {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+}
+
+.storyText {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.learnMore {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  color: #c9f1ff;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.arrow {
+  margin-left: 8px;
+  font-size: 18px;
+}
+
+.divider {
+  width: 1px;
+  background-color: white;
+  height: 100%;
+}
