@@ -1,5 +1,6 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import styles from "./style.module.css";
+import { accordionData } from "@/lib/constants";
 
 const OurWorkingProcess = () => {
   const [openIndex, setOpenIndex] = useState(null); // Track which accordion is open
@@ -7,45 +8,6 @@ const OurWorkingProcess = () => {
   const toggleAccordion = (index) => {
     setOpenIndex(openIndex === index ? null : index); // Toggle the clicked accordion
   };
-
-  const accordionData = [
-    {
-      number: "01",
-      title: "Consultation",
-      content:
-        "During the initial consultation, we will discuss the educational system and staff of your school, their salary, the amount of teachers and students. This will allow you to understand your needs and adapt our services to your requirements.",
-    },
-    {
-      number: "02",
-      title: "Research and Strategy Development",
-      content:
-        "In the planning phase, we will outline the strategies and steps needed to achieve your goals.",
-    },
-    {
-      number: "03",
-      title: "Implementation",
-      content:
-        "This is where the plans are put into action with careful coordination and execution.",
-    },
-    {
-      number: "04",
-      title: "Monitoring and Optimization",
-      content:
-        "During the initial consultation, we will discuss the educational system and staff of your school, their salary, the amount of teachers and students. This will allow you to understand your needs and adapt our services to your requirements.",
-    },
-    {
-      number: "05",
-      title: "Reporting and Communication",
-      content:
-        "In the planning phase, we will outline the strategies and steps needed to achieve your goals.",
-    },
-    {
-      number: "06",
-      title: "Continual Improvement",
-      content:
-        "This is where the plans are put into action with careful coordination and execution.",
-    },
-  ];
 
   return (
     <div className={styles.working}>
