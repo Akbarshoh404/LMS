@@ -3,6 +3,31 @@
   margin-bottom: 75px;
 }
 
+.sectionTitleContainer {
+  margin-top: 75px;
+  padding: 7px;
+  max-width: 350px;
+  margin-inline: auto;
+  background-color: #28a9d6;
+  border-radius: 7px;
+  text-align: center;
+}
+
+.sectionTitle {
+  color: white;
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 61.25px;
+  text-transform: uppercase;
+}
+
+.services {
+  padding-top: 40px;
+  display: flex;
+  justify-items: start;
+  gap: 40px;
+}
+
 .container {
   width: 85%;
   margin: auto;
@@ -46,7 +71,6 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 50px;
-  padding-top: 50px;
 }
 
 .card {
@@ -58,9 +82,8 @@
   padding: 50px;
 
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  gap: 70px;
+  gap: 20px;
   background-color: #f3f3f3;
 }
 
@@ -74,33 +97,34 @@
   justify-content: space-between;
 }
 
-.leftText {
-  display: flex;
-  flex-direction: column;
-}
-
-.leftText span {
+.cardTitle {
   padding: 10px;
-  background: rgba(201, 241, 255, 1);
   border-radius: 7px;
   font-family: Space Grotesk;
   font-size: 30px;
   font-weight: 500;
   line-height: 30px;
 }
+.even {
+  background-color: rgba(201, 241, 255, 1);
+}
+.odd {
+  background-color: white;
+}
 
-.leftButton {
+.cardButton {
   display: flex;
   align-items: center;
   gap: 20px;
   font-size: 20px;
+  border: none;
   cursor: pointer;
 }
 
-/* Right */
-
-.right {
-  width: 220px;
+.cardButton span {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
 }
 
 /* Media */
