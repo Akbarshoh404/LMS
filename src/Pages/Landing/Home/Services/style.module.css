@@ -3,6 +3,12 @@
   margin-bottom: 75px;
 }
 
+.container {
+  width: 85%;
+  margin: auto;
+}
+
+/* Section Title */
 .sectionTitleContainer {
   margin-top: 75px;
   padding: 7px;
@@ -21,25 +27,13 @@
   text-transform: uppercase;
 }
 
-.services {
+.servicesDescription {
   padding-top: 40px;
   display: flex;
-  justify-items: start;
-  gap: 40px;
-}
-
-.container {
-  width: 85%;
-  margin: auto;
-}
-
-/* Title */
-
-.title {
-  width: 100%;
-  display: flex;
-  gap: 40px;
+  flex-direction: column;
   align-items: center;
+  text-align: center;
+  margin-bottom: 40px;
 }
 
 .titleName {
@@ -49,24 +43,16 @@
   font-family: Space Grotesk;
   font-size: 40px;
   font-weight: 500;
-  line-height: 51.04px;
-  text-align: left;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .titleText {
-  width: 550px;
-  height: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  max-width: 600px;
+  margin-top: 15px;
+  font-size: 18px;
+  line-height: 1.5;
 }
 
-/* Cards */
-
+/* Cards Section */
 .cards {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -77,20 +63,16 @@
   width: 100%;
   height: 300px;
   border-radius: 45px;
-  border: 1px #191a23 solid;
-  border-bottom: 5px #191a23 solid;
+  border: 1px solid #191a23;
+  border-bottom: 5px solid #191a23;
   padding: 50px;
-
   display: flex;
   align-items: center;
   gap: 20px;
   background-color: #f3f3f3;
 }
 
-/* Left */
-
 .left {
-  /* width: 100%; */
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -102,12 +84,12 @@
   border-radius: 7px;
   font-family: Space Grotesk;
   font-size: 30px;
-  font-weight: 500;
-  line-height: 30px;
 }
+
 .even {
   background-color: rgba(201, 241, 255, 1);
 }
+
 .odd {
   background-color: white;
 }
@@ -124,59 +106,99 @@
 .cardButton span {
   font-size: 20px;
   font-weight: 400;
-  line-height: 28px;
 }
 
-/* Media */
+.right {
+  width: 200px;
+  height: auto;
+}
 
-@media screen and (max-width: 1550px) {
-  .right {
-    width: 170px;
+/* Media Queries for Responsiveness */
+
+/* Tablet and smaller screens */
+@media screen and (max-width: 1024px) {
+  .cards {
+    grid-template-columns: 1fr;
+    gap: 40px;
   }
-}
 
-@media screen and (max-width: 1430px) {
-  .leftText span {
-    font-size: 25px;
-  }
-}
-
-@media screen and (max-width: 1350px) {
   .card {
+    height: auto;
     padding: 40px;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .right {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .cardButton {
+    justify-content: center;
   }
 }
 
-@media screen and (max-width: 1280px) {
-  .leftText span {
-    font-size: 22px;
-    padding: 5px;
-  }
-  .card {
-    height: 250px;
-    padding: 30px;
-  }
-}
-
-@media screen and (max-width: 1180px) {
-  .leftButton {
-    gap: 10px;
-    font-size: 18px;
+/* Small screens and mobile */
+@media screen and (max-width: 768px) {
+  .sectionTitle {
+    font-size: 36px;
   }
 
-  .leftButton svg {
-    width: 30px;
-    height: 30px;
+  .titleName {
+    font-size: 28px;
   }
 
-  .card {
+  .titleText {
+    font-size: 16px;
+    width: 90%;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
     gap: 30px;
   }
 
-  .right {
-    width: 140px;
+  .card {
+    padding: 20px;
+  }
+
+  .cardTitle {
+    font-size: 24px;
+  }
+
+  .cardButton span {
+    font-size: 16px;
   }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 480px) {
+  .sectionTitle {
+    font-size: 28px;
+  }
+
+  .titleName {
+    font-size: 22px;
+  }
+
+  .titleText {
+    font-size: 14px;
+  }
+
+  .card {
+    padding: 15px;
+  }
+
+  .cardTitle {
+    font-size: 20px;
+  }
+
+  .cardButton span {
+    font-size: 14px;
+  }
+
+  .right {
+    width: 100%;
+    max-width: 200px;
+  }
 }

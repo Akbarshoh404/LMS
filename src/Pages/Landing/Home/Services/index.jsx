@@ -10,7 +10,7 @@ const Services = () => {
         <div className={styles.sectionTitleContainer}>
           <h2 className={styles.sectionTitle}>About us</h2>
         </div>
-        <div className={styles.services}>
+        <div className={styles.servicesDescription}>
           <h3 className={styles.titleName}>Services</h3>
           <p className={styles.titleText}>
             In our learning management system, we offer a number of services
@@ -36,7 +36,7 @@ const Services = () => {
                 </div>
                 <img
                   src={card.image}
-                  alt="search, computer, notes"
+                  alt="service"
                   className={styles.right}
                 />
               </div>

@@ -1,40 +1,34 @@
 .footer {
   width: 100%;
-  height: 550px;
+  height: auto;
   color: white;
 }
 
 .container {
   margin: auto;
   width: 85%;
-  height: 100%;
   background: rgba(25, 26, 35, 1);
-  padding: 55px 60px 50px 60px;
+  padding: 30px;
   border-radius: 45px 45px 0px 0px;
-
   display: flex;
-  justify-content: space-between;
-  gap: 50px;
   flex-direction: column;
+  gap: 30px;
 }
 
 /* TOP */
-
 .top {
   width: 100%;
-  height: 70px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .logoDiv {
   display: flex;
-  gap: 30px;
-
+  gap: 15px;
   font-family: Space Grotesk;
-  font-size: 24px;
-  font-weight: 500;
+  font-size: 18px;
   line-height: 28px;
   text-align: left;
   cursor: pointer;
@@ -44,66 +38,54 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 40px;
+  gap: 20px;
   font-family: Space Grotesk;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 22.97px;
-
+  font-size: 16px;
   text-decoration: underline;
   cursor: pointer;
+  flex-wrap: wrap;
 }
 
 .social {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 25px;
+  gap: 15px;
+  margin-top: 20px;
 }
 
 /* MIDDLE */
-
 .middle {
   width: 100%;
-  height: 200px;
-
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
+  gap: 30px;
 }
 
 .contact {
-  height: 100%;
-  width: 40%;
-
+  width: 100%;
+  max-width: 400px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  gap: 10px;
 }
 
 .contact p {
   font-family: Space Grotesk;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 22.97px;
+  font-size: 16px;
   text-align: left;
-  width: 60%;
 }
 
 .contact div {
-  width: 130px;
-  height: 30px;
-  padding: 7px;
+  width: auto;
+  padding: 10px;
   border-radius: 7px;
   background: rgba(201, 241, 255, 1);
   color: rgba(0, 0, 0, 1);
-
   font-family: Space Grotesk;
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 25.52px;
-  text-align: left;
-
+  font-size: 18px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -112,70 +94,75 @@
 .email {
   background: rgba(41, 42, 50, 1);
   border-radius: 14px;
-  height: 100%;
-  width: 60%;
-
+  width: 100%;
+  max-width: 500px;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  gap: 50px;
+  gap: 10px;
 }
 
 .email input {
-  width: 285px;
-  height: 67px;
+  width: 100%;
+  max-width: 285px;
+  height: 50px;
   border-radius: 14px;
   border: 1px solid white;
   background: none;
-  padding: 20px;
+  padding: 10px;
   color: white;
   font-family: Space Grotesk;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 22.97px;
-  text-align: left;
+  font-size: 16px;
 }
 
 .email button {
-  width: 249px;
-  height: 68px;
+  width: 100%;
+  max-width: 200px;
+  height: 50px;
   border-radius: 14px;
   background: rgba(201, 241, 255, 1);
   border: none;
   font-family: Space Grotesk;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 28px;
+  font-size: 18px;
   text-align: center;
   cursor: pointer;
 }
 
 /* BOTTOM */
-
 .bottom {
   width: 100%;
-  height: 80px;
-
-  border-top: 1px solid rgba(255, 255, 255, 1);
-
   display: flex;
-  align-items: end;
-  gap: 50px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
 }
 
-.bottom p:first-child {
+.bottom p {
   font-family: Space Grotesk;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 28px;
+  font-size: 16px;
   cursor: pointer;
 }
 
-.bottom p:last-child {
-  font-family: Space Grotesk;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 28px;
-  text-decoration: underline;
-  cursor: pointer;
+@media (max-width: 768px) {
+  .container {
+    padding: 20px;
+  }
+
+  .top, .middle, .bottom {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navigation, .social {
+    flex-direction: column;
+  }
+
+  .contact, .email {
+    width: 100%;
+  }
+
+  .email input, .email button {
+    width: 100%;
+  }
 }
